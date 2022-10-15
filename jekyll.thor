@@ -19,7 +19,6 @@ class Jekyll < Thor
       post.puts "tags:"
       post.puts " -"
       post.puts "---"
-      post.puts "# #{title.gsub(/&/,'&amp;')}"
     end
 
     system(options[:editor], filename)
