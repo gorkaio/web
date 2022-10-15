@@ -4,8 +4,11 @@ title: "Gorka López de Torre"
 subtitle: "Consultoría de Software"
 plugins:
   - jekyll-postcss
+  - jekyll-paginate
 postcss:
   cache: false
+paginate: 5
+paginate_path: "/page/:num/"
 defaults:
   - scope:
       path: "assets/images"

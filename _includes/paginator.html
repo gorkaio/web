@@ -1,0 +1,39 @@
+<nav class="flex items-center justify-center text-gray-600 space-x-4">
+    {% if paginator.previous_page %}
+      <a title="anterior" class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded-full" href="{{ paginator.previous_page_path | relative_url }}">
+        <svg class="w-5 h-5 fill-none" role="img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/>
+        </svg>
+      </a>
+    {% else %}
+      <button class="inline-flex items-center bg-gray-300 text-white font-bold p-1 rounded-full">
+        <svg class="w-5 h-5 fill-none" role="img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/>
+        </svg>
+      </button>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="text-blue-400 font-bold">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a class="hover:text-blue-200" href="{{ '/' | relative_url }}">{{ page }}</a>
+      {% else %}
+        <a class="hover:text-blue-200" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a title="siguiente" class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold p-1 rounded-full" href="{{ paginator.next_page_path | relative_url }}">
+        <svg class="w-5 h-5 fill-none" role="img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 17l5-5-5-5M6 17l5-5-5-5"/>
+        </svg>
+      </a>
+    {% else %}
+      <button class="inline-flex items-center bg-gray-300 text-white font-bold p-1 rounded-full">
+        <svg class="w-5 h-5 fill-none" role="img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 17l5-5-5-5M6 17l5-5-5-5"/>
+        </svg>
+      </button>
+    {% endif %}
+  </nav>
