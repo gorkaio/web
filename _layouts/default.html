@@ -6,7 +6,7 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col">
     {% include header.html %}
     <div class="p-4 w-3/4 mx-auto my-8">{{ content }}</div>
     {% include footer.html %}

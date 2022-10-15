@@ -2,7 +2,8 @@
 layout: post
 title: "The title of the new post"
 tags:
- -
+ - test
+ - new_post
 ---
 # The title of the new post
 
