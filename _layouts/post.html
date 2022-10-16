@@ -2,16 +2,21 @@
 layout: default
 ---
 <main>
-    <h1 class="text-3xl mb-2">{{ page.title }}</h1>
-    <div class="text-xs text-gray-500 mt flex space-x-2">
-        <p class="text-gray-600">{{ page.date | date: "%Y-%m-%d"}}</p>
-        <ul class="text-gray-400 flex space-x-2">
-            {% for tag in page.tags %}
-                <li>#{{ tag }}</li>
-            {% endfor %}
-        </ul>
-      </div>
-    <div class="text-justify space-y-4 mt-8">
+    <header>
+        <h1 class="text-3xl mb-2 text-orange-400 pb-2 border-b-2 border-orange-400">{{ page.title }}</h1>
+        <div class="text-xs text-gray-500 mt flex space-x-2">
+            <p class="text-gray-600">{{ page.date | date: "%Y-%m-%d"}}</p>
+            <ul class="text-gray-400 flex space-x-2">
+                {% for tag in page.tags %}
+                    <li>#{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </header>
+
+    <div class="text-justify space-y-8 mt-8 font-serif text-xl leading-relaxed">
         {{ content }}
     </div>
+
+    <footer></footer>
 </main>

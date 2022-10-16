@@ -69,6 +69,8 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   jekyll-postcss
+  kramdown
+  rouge
   stringex
   thor
   webrick

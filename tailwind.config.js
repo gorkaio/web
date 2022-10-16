@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './_drafts/**/*.html',
@@ -7,11 +9,24 @@ module.exports = {
     './*.md',
     './*.html',
   ],
-  theme: {
     theme: {
-      extend: {},
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
+      fontFamily: {
+        'sans': ["Inter", ...defaultTheme.fontFamily.sans],
+        'serif': ["Lora", ...defaultTheme.fontFamily.serif],
+        'mono': [['"Noto Sans Mono"', 'monospace'], ...defaultTheme.fontFamily.mono],
+        'logo': ['"Hurricane"', 'cursive']
+      },
+      extend: {
+
+      },
     },
-  },
-  plugins: []
+  plugins: [
+  ]
 }
 

@@ -1,12 +1,15 @@
 url: "https://gorka.io"
 baseurl: ""
 title: "Gorka López de Torre"
-subtitle: "Consultoría de Software"
+subtitle: "Consultor de Software"
 plugins:
   - jekyll-postcss
   - jekyll-paginate
 postcss:
   cache: false
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 paginate: 5
 paginate_path: "/page/:num/"
 defaults:
