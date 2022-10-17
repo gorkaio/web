@@ -4,7 +4,7 @@ title: "Gorka López de Torre"
 subtitle: "Consultor de Software"
 tagline: "Un blog de tecnología y programación"
 description: "El blog de Gorka López de torre, consultor IT"
-author: "Gorka López de Torre"
+author: gorkaio
 twitter:
   username: gorkaio
   card: summary
@@ -26,6 +26,7 @@ locale: es_ES
 plugins:
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 postcss:
@@ -35,6 +36,8 @@ kramdown:
   syntax_highlighter: rouge
 paginate: 5
 paginate_path: "/page/:num/"
+feed:
+  excerpt_only: true
 defaults:
   - scope:
       path: "assets/images"
