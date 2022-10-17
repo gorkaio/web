@@ -2,9 +2,20 @@
 layout: default
 ---
 <main>
-    <h1 class="text-3xl mb-2 font-sans pb-2 border-b-2 border-orange-400 text-orange-400">{{ page.title }}</h1>
+    <article>
+        <header>
+            <h1>{{ page.title }}</h1>
+            <ul class="tags">
+                {% for tag in page.tags %}
+                    <li>{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        </header>
 
-    <div class="text-justify space-y-8 mt-8 font-serif text-xl leading-relaxed">
-        {{ content }}
-    </div>
+        <div class="content mt-8">
+            {{ content }}
+        </div>
+        
+        <footer></footer>
+    </article>
 </main>
