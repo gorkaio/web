@@ -2,10 +2,32 @@ url: "https://gorka.io"
 baseurl: ""
 title: "Gorka López de Torre"
 subtitle: "Consultor de Software"
+tagline: "Un blog de tecnología y programación"
+description: "El blog de Gorka López de torre, consultor IT"
+author: "Gorka López de Torre"
+twitter:
+  username: gorkaio
+  card: summary
+logo: /assets/images/gorka.jpg
+social:
+  name: Gorka López de Torre
+  links:
+    - https://twitter.com/gorkaio
+    - https://linkedin.com/in/gorkalopezdetorre
+    - https://github.com/gorkaio
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+  facebook: 1234
+locale: es_ES
 plugins:
   - jekyll-postcss
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 postcss:
   cache: false
 kramdown:

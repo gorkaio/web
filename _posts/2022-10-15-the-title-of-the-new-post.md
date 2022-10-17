@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "The title of the new post"
+description: "Description to be used by SEO"
+image: /assets/images/gorka.jpg
 tags:
  - test
  - new_post
