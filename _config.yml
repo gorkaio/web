@@ -5,6 +5,7 @@ subtitle: "Consultor de Software"
 plugins:
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-sitemap
 postcss:
   cache: false
 kramdown:
