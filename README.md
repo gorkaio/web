@@ -13,3 +13,9 @@ bundle exec jekyll serve --livereload
 ```sh
 thor jekyll:new The title of the new post
 ```
+
+## TODO
+
+- [ ] Site verification
+- [ ] Paypal validation
+- [ ] Comments
