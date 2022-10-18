@@ -19,8 +19,9 @@ layout: default
             {{ content }}
         </div>
 
-        <footer>
-            {% include social_share.html %}
+        <footer class="flow-root border-t border-gray-200 mt-8 pt-8">
+            <aside class="float-left">{% include paypal_coffee.html %}</aside>
+            <aside class="float-right">{% include social_share.html %}</aside>
         </footer>
     </article>
 </main>
