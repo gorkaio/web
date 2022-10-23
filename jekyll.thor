@@ -1,11 +1,14 @@
 require "stringex"
+require "fileutils"
+
 class Jekyll < Thor
   desc "new", "create a new post"
   method_option :editor, :default => "subl"
   def new(*title)
     title = title.join(" ")
     date = Time.now.strftime('%Y-%m-%d')
-    filename = "_posts/#{date}-#{title.to_url}.md"
+    FileUtils.mkdir_p "_posts/#{date}-#{title.to_url}"
+    filename = "_posts/#{date}-#{title.to_url}/#{date}-#{title.to_url}.md"
 
     if File.exist?(filename)
       abort("#{filename} already exists!")

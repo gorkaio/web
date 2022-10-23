@@ -2,20 +2,20 @@
 layout: post
 title: "Múltiples identidades en git"
 description: "Cómo configurar git para usar identidades diferentes para cada repositorio"
-image: /assets/images/spidey.jpg
+image: spidey.jpg
 tags:
  - git
 ---
 
 Como consultor trabajo en diferentes repositorios para Thoughtworks, nuestros clientes y algunos proyectos personales, como este blog. Para cada uno de ellos tengo diferentes necesidades trabajando con git. Por ejemplo, _comiteo_ con diferentes identidades dependiendo del entorno en el que estoy trabajando: uso mi email de Thoughtworks para proyectos internos, el email corporativo del cliente para el proyecto al que estoy asignado y mi email personal para mis propios proyectos. Como Spidey, tengo varias identidades. Y, dependiendo de las circunstancias, utilizo una u otra.
 
-![Identidad múltiple](/assets/images/spidey.jpg)
+![Identidad múltiple](spidey.jpg)
 
 También como Spidey, equivocarme en la identidad que uso cuando actúo en un entorno concreto puede resultar un error fatal: _comitear_ en el repositorio de un cliente con mi identidad personal no estaría bien, pero hacerlo con la identidad de otro cliente puede ser un problema serio de confidencialidad.
 
 Para facilitarme la vida, organizo mi trabajo en diferentes carpetas bajo una carpeta principal `Workspace` según estas identidades. Así, utilizo `~/Workspace/thoughtworks` para proyectos internos, `~/Workspace/gorkaio` para proyectos personales y `~/Workspace/acme` para los proyectos del cliente actual, "Acme".
 
-![Estructura de Workspace](/assets/images/workspace.png)
+![Estructura de Workspace](workspace.png)
 
 Configurar git para cada repositorio individualmente es pesado y propenso a errores, pero podemos automatizar el cambio de identidad en función de la ruta actual. Veamos cómo.
 
