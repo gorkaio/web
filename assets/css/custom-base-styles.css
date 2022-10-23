@@ -18,6 +18,18 @@ article {
         a {
             @apply text-green-600 decoration-dashed underline hover:text-green-400;
         }
+        h1 {
+            @apply text-3xl font-sans font-bold;
+        }
+        h2 {
+            @apply text-2xl font-sans text-orange-400;
+        }
+        h3 {
+            @apply text-xl font-sans text-orange-300;
+        }
+        ul {
+            @apply indent-8 list-disc list-inside;
+        }
     }
     footer {
         @apply mt-4 text-xs text-gray-600 flex items-center;

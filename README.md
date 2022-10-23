@@ -19,3 +19,5 @@ thor jekyll:new The title of the new post
 - [ ] Site verification
 - [ ] Paypal validation
 - [ ] Comments
+- [ ] Style article lists
+- [ ] Fix slideshare inclusion 
