@@ -39,6 +39,9 @@ paginate: 5
 paginate_path: "/page/:num/"
 feed:
   excerpt_only: true
+repository: "gorkaio/web"
+staticman:
+  branch: "main"
 defaults:
   - scope:
       path: "assets/images"

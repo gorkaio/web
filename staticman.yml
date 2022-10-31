@@ -1,0 +1,17 @@
+comments:
+  allowedFields: ["name", "email", "url", "message"]
+  branch: "main"
+  commitMessage: "Add new comment(s)."
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  moderation: true
+  name: "gorka.io"
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "message"]
+  transforms:
+    email: md5

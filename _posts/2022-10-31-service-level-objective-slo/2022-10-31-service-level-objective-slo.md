@@ -106,9 +106,9 @@ Los SLO nos sirven para razonar sobre la salud del sistema, son un compromiso in
 
 No resulta muy difícil imaginar por qué los SLO deberían ser siempre más restrictivos que los SLA: queremos que nuestro sistema nos advierta de cualquier problema de fiabilidad antes de que lleguemos a poner en peligro el acuerdo de nivel servicio pactado con nuestros usuarios.
 
-- SLI: % peticiones válidas servidas en menos de 100ms, medidas en el load balancer.
-- SLO: 99.5% peticiones válidas servidas en menos de 100ms, medidas en el load balancer, en una ventana deslizante de 30 días.
-- SLA: 99% peticiones válidas servidas en menos de 100ms, medidas en el load balancer, en una ventana deslizante de 30 días. En caso de incumplimiento, se compensará con créditos de servicio.
+- **SLI**: % peticiones válidas servidas en menos de 100ms, medidas en el load balancer.
+- **SLO**: 99.5% peticiones válidas servidas en menos de 100ms, medidas en el load balancer, en una ventana deslizante de 30 días.
+- **SLA**: 99% peticiones válidas servidas en menos de 100ms, medidas en el load balancer, en una ventana deslizante de 30 días. En caso de incumplimiento, se compensará con créditos de servicio.
 
 ## Son los usuarios, amigo
 
