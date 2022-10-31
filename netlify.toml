@@ -1,4 +1,4 @@
 [build]
-command = "yarn build"
+command = "JEKYLL_ENV=production yarn build"
 functions = "functions"
 publish = "build"
