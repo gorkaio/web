@@ -1,8 +1,9 @@
 comments:
   allowedFields: ["name", "email", "url", "message"]
+  allowedOrigins: ["localhost", "gorka.io"]
   branch: "main"
   commitMessage: "Add new comment(s)."
-  filename: "comment-{@timestamp}"
+  filename: "comment-{@timestamp}"  
   format: "yaml"
   generatedFields:
     date:
