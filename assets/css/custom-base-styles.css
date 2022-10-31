@@ -18,6 +18,9 @@ article {
         a {
             @apply text-green-600 decoration-dashed underline hover:text-green-400;
         }
+        img {
+            @apply object-contain mx-auto;
+        }
         h1 {
             @apply text-3xl font-sans font-bold;
         }
@@ -25,9 +28,15 @@ article {
             @apply text-2xl font-sans text-orange-400;
         }
         h3 {
-            @apply text-xl font-sans text-orange-300;
+            @apply text-xl font-sans text-gray-800;
+        }
+        h4 {
+            @apply text-lg font-sans text-gray-600;
         }
         ul {
+            @apply indent-4 list-disc list-inside space-y-2;
+        }
+        ul ul {
             @apply indent-8 list-disc list-inside;
         }
     }

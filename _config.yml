@@ -24,6 +24,7 @@ webmaster_verifications:
   facebook: 1234
 locale: es_ES
 plugins:
+  - jekyll-spaceship
   - jekyll-postcss
   - jekyll-paginate
   - jekyll-feed

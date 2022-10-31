@@ -15,5 +15,6 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-postcss'
   gem 'jekyll-paginate'
+  gem 'jekyll-spaceship'
 end
 
