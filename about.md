@@ -12,6 +12,8 @@ Tengo una relación complicada con Java, adoro Elixir, programo en Go y Python e
 Y no olvido que todo esto empezó con pequeños juegos en BASIC y utilidades y demos en C. También con una pizca de ensamblador de Z80 y 6502,
 por culpa de Nintendo; gracias por dos de las máquinas mejor construidas de la historia de los videojuegos, N.
 
+![Philips MSX VG-8020](/assets/images/msx.jpg)
+
 Empecé en PHP por casualidad, haciendo pequeños proyectos web como freelance para ganar algo de dinero mientras estudiaba la carrera,
 aunque lo que realmente me gustaba entonces era crear utilidades y emuladores para NES y GameBoy.
 Tuve un pequeño romance con IBM que acabó cuando decidí montar mi empresa, una consultora dedicada esencialmente al desarrollo web y consultoría
