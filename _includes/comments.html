@@ -41,25 +41,30 @@
 </form>
 
 {% if site.data.comments[page.slug] %}
-
-  <h3>
-    {% if site.data.comments[page.slug].size > 1 %}
-      {{ site.data.comments[page.slug] | size }}
-    {% endif %}
-    comentarios
-  </h3>
-
-  <p>
-  <hr>
+<aside class="mt-12">
+  <header>
+    <h3 class="text-lg text-orange-500">
+        {% if site.data.comments[page.slug].size > 1 %}
+        {{ site.data.comments[page.slug] | size }}
+        {% endif %}
+        Comentarios
+    </h3>
+  </header>
 
   {% assign comments = site.data.comments[page.slug] | sort %}
 
-  {% for comment in comments %}
-    <br>
-    <legend><strong>{{ comment[1].name }}</strong><legend>
-    <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
-    <p>{{ comment[1].message | markdownify }}
-    <hr>
-  {% endfor %}
-  <p>
+  <div class="space-y-8 mt-4 ml-2">
+    {% for comment in comments %}
+        <div>
+            <legend class="text-sm text-orange-400">{{ comment[1].name }}</legend>
+            <div class="text-xs text-gray-500 mt">
+                {{ comment[1].date | date: "%Y-%m-%d" }}
+            </div>
+            <div class="text-gray-600 mt-2">
+                {{ comment[1].message | markdownify }}
+            </div>
+        </div>
+    {% endfor %}
+  </div>
+</aside>
 {% endif %}
