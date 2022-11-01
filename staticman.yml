@@ -16,3 +16,5 @@ comments:
   requiredFields: ["name", "message"]
   transforms:
     email: md5
+  reCaptcha:
+    enabled: false

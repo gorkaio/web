@@ -47,3 +47,4 @@ defaults:
       path: "assets/images"
     values:
       image: true
+staticman_url: https://https://adorable-boba-ede97b.netlify.app/functions/staticman/v2/entry/${github-username}/${blog-repo}/main/comments
