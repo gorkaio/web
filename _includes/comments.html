@@ -1,5 +1,5 @@
 <h3 class="text-lg text-orange-500">Comenta este artículo</h3>
-<form class="w-full max-w-3xl mt-8" method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+<form class="w-full max-w-3xl mt-8" method="POST" action="{{ site.staticman_url }}">
   <input name="options[redirect]" type="hidden" value="https://gorka.io">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   

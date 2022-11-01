@@ -39,7 +39,6 @@ paginate: 5
 paginate_path: "/page/:num/"
 feed:
   excerpt_only: true
-repository: "gorkaio/web"
 staticman:
   branch: "main"
 defaults:
@@ -47,4 +46,6 @@ defaults:
       path: "assets/images"
     values:
       image: true
-staticman_url: https://https://adorable-boba-ede97b.netlify.app/functions/staticman/v2/entry/${github-username}/${blog-repo}/main/comments
+repository: "gorkaio/web"
+staticman_base: "https://adorable-boba-ede97b.netlify.app/.netlify/functions/staticman"
+staticman_url: "${staticman_base}/${repository}/main/comments"
