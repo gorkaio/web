@@ -46,6 +46,4 @@ defaults:
       path: "assets/images"
     values:
       image: true
-repository: "gorkaio/web"
-staticman_base: "https://adorable-boba-ede97b.netlify.app/.netlify/functions/staticman"
-staticman_url: "${staticman_base}/${repository}/main/comments"
+staticman_url: "https://adorable-boba-ede97b.netlify.app/.netlify/functions/staticman/gorkaio/web/main/comments"
