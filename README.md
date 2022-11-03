@@ -17,7 +17,4 @@ thor jekyll:new The title of the new post
 ## TODO
 
 - [ ] Site verification
-- [ ] Paypal validation
-- [ ] Comments
-- [ ] Style article lists
 - [ ] Fix slideshare inclusion 

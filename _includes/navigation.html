@@ -1,4 +1,4 @@
-<nav class="text-sm mt flex-grow space-x-2">
+<nav class="text-xs md:text-sm mt flex-grow space-x-2">
     {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="text-orange-400"{% else %}class="text-gray-600 hover:text-orange-300"{% endif %}>
       {{ item.name }}
