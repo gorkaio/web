@@ -5,13 +5,13 @@
 ### Run in development mode
 
 ```sh
-bundle exec jekyll serve --livereload
+yarn dev
 ```
 
 ### Create new post
 
 ```sh
-thor jekyll:new The title of the new post
+yarn new "The title of the new post"
 ```
 
 ## TODO
