@@ -7,8 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "qs": "^6.9.1",
-    "staticman": "^2.0.0",
-    "url-pattern": "^1.0.3"
+    "staticman": "eduardoboucas/staticman",
+    "url-pattern": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^7.9.0"
