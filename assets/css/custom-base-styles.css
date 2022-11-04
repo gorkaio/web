@@ -40,7 +40,7 @@ article {
             @apply text-left indent-8 list-disc list-inside;
         }
         .highlight {
-            @apply bg-gray-300 p-1 overscroll-contain overflow-x-auto;
+            @apply bg-gray-300 p-1 overscroll-x-contain overflow-x-auto;
         }
     }
     footer {
