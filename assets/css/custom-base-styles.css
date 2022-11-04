@@ -14,7 +14,7 @@ article {
         }
     }
     .content {
-        @apply font-serif text-base md:text-lg leading-relaxed space-y-8;
+        @apply font-serif text-base md:text-lg leading-relaxed space-y-8 text-justify;
         a {
             @apply text-green-600 underline hover:text-green-400;
         }
@@ -38,6 +38,9 @@ article {
         }
         ul ul {
             @apply text-left indent-8 list-disc list-inside;
+        }
+        .highlight {
+            @apply bg-gray-300 p-1 overscroll-contain overflow-x-auto;
         }
     }
     footer {
