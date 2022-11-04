@@ -1,0 +1,9 @@
+plugins:
+  - jekyll-crosspost-to-medium
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: cc-40-zero
+  text: '<p><i>Este artículo se publicó originalmente en <a href="https://gorka.io" rel="canonical">gorka.io</a>.</i></p>'
+  backdate: true

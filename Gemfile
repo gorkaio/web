@@ -16,5 +16,6 @@ group :jekyll_plugins do
   gem 'jekyll-postcss'
   gem 'jekyll-paginate'
   gem 'jekyll-spaceship'
+  gem 'jekyll-crosspost-to-medium'
 end
 

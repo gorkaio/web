@@ -8,8 +8,8 @@
   },
   "scripts": {
     "new": "thor jekyll new",
-    "dev": "bundle exec jekyll serve --livereload",
-    "build": "jekyll build",
+    "dev": "bundle exec jekyll serve --livereload --config _config.yml,_config_dev.yml",
+    "build": "jekyll build --config _config.yml,_config_prod.yml",
     "postinstall": "cd functions/staticman && yarn --production"
   }
 }

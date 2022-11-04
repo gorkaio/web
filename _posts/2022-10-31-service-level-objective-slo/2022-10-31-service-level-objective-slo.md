@@ -3,6 +3,7 @@ layout: post
 title: "Service Level Objective (SLO)"
 description: "Introducción a Service Level Objectives (SLO)"
 image: slo-dashboard.webp
+crosspost_to_medium: true
 tags:
  - sre
 ---
