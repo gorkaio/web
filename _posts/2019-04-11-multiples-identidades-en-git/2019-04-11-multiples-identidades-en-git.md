@@ -3,7 +3,7 @@ layout: post
 title: "Múltiples identidades en git"
 description: "Cómo configurar git para usar identidades diferentes para cada repositorio"
 image: /2019/04/11/spidey.jpg
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - git
 ---

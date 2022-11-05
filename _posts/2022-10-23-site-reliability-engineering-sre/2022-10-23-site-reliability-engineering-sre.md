@@ -3,7 +3,7 @@ layout: post
 title: "Site Reliability Engineering (SRE)"
 description: "Introducción a Site Reliability Engineering (SRE)"
 image: /2022/10/23/software_lifecycle.webp
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - sre
 ---
