@@ -17,5 +17,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-spaceship'
   gem 'jekyll-crosspost-to-medium'
+  gem 'jekyll-twitter-plugin'
 end
 

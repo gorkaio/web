@@ -33,14 +33,35 @@ article {
         h4 {
             @apply text-left text-base md:text-lg font-sans text-gray-600;
         }
-        ul {
-            @apply text-left text-sm md:text-base indent-4 list-disc list-inside space-y-4;
+        ul, ol {
+            @apply text-left text-sm md:text-base indent-4 list-disc list-inside space-y-2 mt-2;
+        }
+        ol {
+            @apply list-decimal;
+        }
+        ol ol {
+            @apply text-left indent-8 list-decimal list-inside;
         }
         ul ul {
             @apply text-left indent-8 list-disc list-inside;
         }
         .highlight {
             @apply bg-gray-300 p-1 overscroll-x-contain overflow-x-auto;
+        }
+        table {
+            @apply border min-w-full border-green-100 bg-white mx-auto text-sm font-medium min-w-[80%];
+            thead {
+                @apply bg-green-200 align-middle justify-center border-b-2 border-green-300;
+            }
+            tbody tr {
+                @apply even:bg-gray-100;
+            }
+            td, th {
+                @apply p-2 border border-green-300;
+            }
+        }
+        blockquote {
+            @apply bg-slate-200 w-3/4 mx-auto py-4 px-8 font-medium;
         }
     }
     footer {

@@ -25,6 +25,7 @@ webmaster_verifications:
 locale: es_ES
 plugins:
   - jekyll-spaceship
+  - jekyll-twitter-plugin
   - jekyll-postcss
   - jekyll-paginate
   - jekyll-feed
