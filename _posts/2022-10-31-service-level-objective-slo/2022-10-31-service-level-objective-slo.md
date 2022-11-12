@@ -115,6 +115,8 @@ No resulta muy difícil imaginar por qué los SLO deberían ser siempre más res
 
 Todo en SRE gira entorno a los usuarios y su satisfacción con el uso de nuestro servicio. Los _Service Level Indicator_ (SLI) que fijemos deben medir de forma razonable esta satisfacción. Los _Service Level Objective_ (SLO) que marquemos suponen la diferencia entre tener usuarios felices con el comportamiento del servicio a decepcionarles entregando una calidad de servicio insuficiente. Y si continuamos degradando la fiabilidad, acabaremos con usuarios cabreados al superar el límite fijado por nuestro _Service Level Agreement_ (SLA), y potencialmente enfrentándonos a consecuencias legales o compensaciones de cualquier tipo.
 
+![SLI-SLO-SLA](sli-slo-sla.webp)
+
 ### Satisfacción de los usuarios y fiabilidad
 
 Por esto es tan importante tener siempre en mente la experiencia de usuario y contar con la participación de quienes toman más responsabilidad en el enlace con ellos, los responsables de producto.
