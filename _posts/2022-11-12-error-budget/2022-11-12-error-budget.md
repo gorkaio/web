@@ -3,12 +3,12 @@ layout: post
 title: "Error Budget"
 description: "Introducción a Error Budgets en SRE"
 image: /2022/11/12/slo-dashboard.png
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - sre
 ---
 
-Una vez vista la introducción a [Site Reliability Engineering (SRE)]({% post_url 2022-10-23-site-reliability-engineering-sre %}) y los conceptos de [niveles de servicio SLI, SLO y SLA]({% post_url 2022-10-31-service-level-objective-slo %}), la última pieza del puzle es el _Error Budget_ o margen de error.
+Una vez vista la introducción a [Site Reliability Engineering (SRE)]({% post_url 2022-10-23-site-reliability-engineering-sre %}) y los conceptos de [niveles de servicio SLI, SLO y SLA]({% post_url 2022-10-31-service-level-objective-slo %}), la última pieza del puzle es el _Error Budget_ o presupuesto de error.
 
 El _Error Budget_ es un mecanismo de control que determina cuándo es el momento de enfocarnos en mejorar la fiabilidad del sitio. A través de los indicadores de nivel de servicio hemos acordado unos límites de fiabilidad que consideramos razonables para mantener la satisfacción de los usuarios. Al hacerlo, implícitamente hemos determinado el nivel de fallo que estamos dispuestos a admitir como normal, sin consecuencias en el desarrollo. Si traspasamos este límite, es el momento de revisar cómo podemos volver a los niveles de fiabilidad acordados.
 
@@ -42,13 +42,13 @@ Tanto es así que, en ocasiones, puede resultar conveniente quemar nuestro presu
 | 99.99%               | 52.6 minutos | 12.96 minutos | 4.32 minutos  |
 | 99.999%              | 5.26 minutos | 1.30 minutos  | 25.9 segundos |
 
-## Política de margen de error
+## Política de presupuesto de error
 
-La política de margen de error (_Error Budget Policy_) es un acuerdo de equipo que determina cómo vamos a actuar cuando nuestro margen de error se reduce o se agota por completo. Debe ser un acuerdo entre todas las partes implicadas, incluyendo responsables de producto, desarrolladores, gestores...
+La política de presupuesto de error (_Error Budget Policy_) es un acuerdo de equipo que determina cómo vamos a actuar cuando nuestro presupuesto de error se reduce o se agota por completo. Debe ser un acuerdo entre todas las partes implicadas, incluyendo responsables de producto, desarrolladores, gestores...
 
 Es un acuerdo _constructivo_: no se trata de penalizar el fallo, si no de establecer unas bases comunes que determinan cómo actuamos como equipo en estos escenarios. *Detener el desarrollo no es deseable*, esta política da al equipo la capacidad de enfocarse exclusivamente en la fiabilidad cuando los datos muestran que es más importante que el desarrollo de nuevas características de producto.
 
-La política de margen de error debería incluir, al menos, lo siguientes aspectos:
+La política de presupuesto de error debería incluir, al menos, lo siguientes aspectos:
 
 - Política de SLO fallido _(SLO miss policy)_
 
@@ -57,22 +57,22 @@ La política de margen de error debería incluir, al menos, lo siguientes aspect
 
 - Política de corte _(outage policy)_
 
-> "Si una única clase de fallo consume más de nuestro 20% de margen de error durante un ciclo, **debemos** incluir como objetivo corregir este fallo durante el próximo ciclo"
+> "Si una única clase de fallo consume más de nuestro 20% de presupuesto de error durante un ciclo, **debemos** incluir como objetivo corregir este fallo durante el próximo ciclo"
 
 - Política de escalado _(escalation policy)_
 
-> "En caso de desacuerdo, **podemos** (_should_) elevar la cuestión al jefe de ingeniería para la toma de una decisión."
+> "En caso de desacuerdo, **podemos** elevar la cuestión al jefe de ingeniería para la toma de una decisión."
 
 - Política de revisión
 
-> "*Podemos* revisar esta política en cada cierre de ciclo para adaptarla a lo que hemos descubierto durante este tiempo."
+> "*Debemos* revisar esta política en cada cierre de ciclo para adaptarla a lo que hemos descubierto durante este tiempo."
 
 Es importante hacer notar que en esta política utilizamos `podemos` y `debemos` de forma muy intencional, siguiendo los niveles de requerimiento definidos por el [RFC-2119 en su versión española](https://www.rfc-es.org/rfc/rfc2119-es.txt).
 
 
 ## Vale, ¿por dónde empezamos?
 
-Hemos visto [qué es SRE]({% post_url 2022-10-23-site-reliability-engineering-sre %}), hemos dado un repaso a la [definición de niveles de servicio]({% post_url 2022-10-31-service-level-objective-slo %}) y hemos visto qué es el margen de error y cómo se relaciona con los niveles de servicio y con nuestra capacidad para innovar, experimentar y asumir riesgos, mientras mantenemos la satisfacción de nuestros usuarios. Si nos planteamos poner esto en práctica, ¿por dónde empezamos?
+Hemos visto [qué es SRE]({% post_url 2022-10-23-site-reliability-engineering-sre %}), hemos dado un repaso a la [definición de niveles de servicio]({% post_url 2022-10-31-service-level-objective-slo %}) y hemos visto qué es el presupuesto de error y cómo se relaciona con los niveles de servicio y con nuestra capacidad para innovar, experimentar y asumir riesgos, mientras mantenemos la satisfacción de nuestros usuarios. Si nos planteamos poner esto en práctica, ¿por dónde empezamos?
 
 - Elegir un único servicio que pasaremos a regir mediante el modelo SRE
 - Proporcionar al equipo responsable del servicio el soporte ejecutivo necesario
@@ -81,7 +81,7 @@ Hemos visto [qué es SRE]({% post_url 2022-10-23-site-reliability-engineering-sr
 - Fomentar un progreso gradual e iterativo que libere la capacidad del equipo de continuar progresando
 - Una vez formado un caso de éxito, compartirlo con otros equipos de la empresa
 
-Durante todo este proceso, es importante recordar que la automatización y el trabajo en operabilidad permite escalar los sistemas de la empresa sin escalar la organización, que debemos trabajar en reducir la tensión entre desarrollo y operaciones, y que nuestro margen de error acordado y la política asociada a él nos proporcionan la flexibilidad de trabajar en desarollo de nuevas características y en fiabilidad bajo un criterio sólido.
+Durante todo este proceso, es importante recordar que la automatización y el trabajo en operabilidad permite escalar los sistemas de la empresa sin escalar la organización, que debemos trabajar en reducir la tensión entre desarrollo y operaciones, y que nuestro presupuesto de error acordado y la política asociada a él nos proporcionan la flexibilidad de trabajar en desarollo de nuevas características y en fiabilidad bajo un criterio sólido.
 
 ### Definir nuestro primer SLO
 
@@ -89,14 +89,14 @@ Una aproximación sistemática a la definición de nuestros SLOs nos ayudará a 
 
 1. Elegir un servicio concreto.
 2. Comprender cuáles son los usuarios (personas u otros servicios) que utilizan este servicio.
-3. Para un tipo concreto de usuario y si caso de uso principal en el servicio:
+3. Para un tipo concreto de usuario y su caso de uso principal en el servicio:
     1. ¿Qué garantías les gustaría tener sobre el servicio?
     2. ¿Qué garantías _creen tener_ pero no tienen?
-    3. ¿ Que les hace estar satisfechos o insatisfechos con el servicio?
+    3. ¿Qué les hace estar satisfechos o insatisfechos con el servicio?
 4. Elegir **una única cosa** a medir y cómo medirla (SLI)
 5. Establecer un objetivo basado en la experiencia o en la mejor estimación (SLO)
-6. Asegurar que el margen de error resultante es aceptado como normal por todos los implicados (producto, desarrollo, gestión...)
-7. Definir las acciones que tomaremos si fallamos en este objetivo de nivel de servicio (Política de margen de error)
+6. Asegurar que el presupuesto de error resultante es aceptado como normal por todos los implicados (producto, desarrollo, gestión...)
+7. Definir las acciones que tomaremos si fallamos en este objetivo de nivel de servicio (Política de presupuesto de error)
 8. **Iterar, refinar y extender**
 
 Los usuarios suelen tener expectativas poco realistas sobre la fiabilidad del servicio, por lo que es importante que en este proceso tengamos en mente qué es aceptable para ellos, y no lo que consideran ideal.
