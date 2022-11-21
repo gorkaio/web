@@ -42,8 +42,14 @@ article {
         ol ol {
             @apply text-left indent-8 list-decimal list-inside;
         }
+        ol ol ol {
+            @apply indent-16;
+        }
         ul ul {
             @apply text-left indent-8 list-disc list-inside;
+        }
+        ul ul ul {
+            @apply indent-16;
         }
         .highlight {
             @apply bg-gray-300 p-1 overscroll-x-contain overflow-x-auto;
@@ -61,7 +67,10 @@ article {
             }
         }
         blockquote {
-            @apply bg-slate-200 w-3/4 mx-auto py-4 px-8 font-medium;
+            @apply bg-slate-200 w-5/6 mx-auto py-4 px-8 font-medium;
+        }
+        iframe {
+            @apply mx-auto;
         }
     }
     footer {
