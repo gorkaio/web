@@ -3,7 +3,7 @@ layout: post
 title: "Objetivos y resultados clave (OKR)"
 description: "Introducción a Objectives and Key Results (OKR)"
 image: /2022/11/21/okr-target.jpg
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - okr
 ---
