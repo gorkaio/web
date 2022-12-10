@@ -3,7 +3,7 @@ layout: post
 title: "El cuentacuentos"
 description: "ChatGPT en el proceso creativo"
 image: /2022/12/10/automata.png
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - gpt
  - ia
@@ -127,6 +127,8 @@ No sé vosotros, pero yo devoraría ese relato convertido en novela. Una última
 ## Conclusión
 
 ChatGPT es una poderosísima herramienta de apoyo al proceso creativo. Personalmente, como ávido lector y escritor aficionado, podría pasar horas jugando a generar relatos que pueden ser después refinados y extendidos por una mano experta. No es una fuente de verdad, ni pretende serlo, así que utilizarlo para generar artículos científicos puede no ser la mejor de las ideas. Pero es un auténtico generador de ilusiones que, bien guiado y complementado con la experiencia de un profesional, puede tener resultados que cambien absolutamente todo lo que conocemos. No me convertirá en Stephen, ni en Michael, ni en Mikel Santiago... pero en manos de ellos, como ayudante silencioso a su proceso de creación, puede hacerme disfrutar de forma inimaginable.
+
+¿Nos quitará el trabajo a los programadores? Sinceramente, creo que no. Igual que no quitará el trabajo a los buenos escritores. Pero se convertirá en una parte tan esencial de nuestro trabajo como puede serlo un teclado, y nos ayudará a hacer cosas que hoy en día son difíciles de imaginar.
 
 Y, por si os lo estabais preguntando, sí: la imagen del autómata generador de historias también la ha generado una IA. La pregunta ya sólo puede ser, ¿soñará con ovejas eléctricas?
 
