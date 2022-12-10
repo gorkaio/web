@@ -77,3 +77,25 @@ article {
         @apply mt-4 text-xs text-gray-600 flex items-center;
     }
 }
+.chatgpt {
+    @apply bg-gray-600 border border-gray-800 w-full p-4 text-gray-300 text-sm font-mono;
+    .chatgpt-gorka {
+        @apply bg-gray-800 pl-10 px-8 my-1 pt-1 pb-2 relative space-y-2;
+    }
+    .chatgpt-gpt {
+        @apply bg-gray-700 pl-10 px-8 my-1 pt-2 pb-2 relative space-y-2;
+    }
+    .chatgpt-gorka::before {
+        content:url('chatgpt-gorka.png');
+        position: absolute;
+        z-index: 100000;
+        left: 4px;
+    }
+    .chatgpt-gpt::before {
+        content:url('chatgpt-gpt.png');
+        position: absolute;
+        z-index: 100000;
+        left: 4px;
+        top: 6px;
+    }
+}
