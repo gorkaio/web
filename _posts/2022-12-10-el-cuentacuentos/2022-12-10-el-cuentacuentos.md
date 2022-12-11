@@ -59,7 +59,7 @@ Aquí es donde, para mí, se empiza a poner interesante desde el punto de vista 
 
 ## ChatGPT y el proceso creativo
 
-El motivo por el que últimamente he pasado tanto tiempo sufriendo el chatbot de Correos es que soy muy fan de las novelas de [Michael Connelly](https://www.michaelconnelly.com/). Cuando me enteré de que estaban a la venta en Estados Unidos primeras ediciones firmadas de la última novela con Harry Bosh, "Desert Star", no pude evitar el impulso de comprarla. [Correos parece haber perdido mi libro](https://twitter.com/gorkaio/status/1600436911797342208?s=20&t=jxSim7Y6A1NKmsIohZ2mcw), pero es otra historia.
+El motivo por el que últimamente he pasado tanto tiempo sufriendo el chatbot de Correos es que soy muy fan de las novelas de [Michael Connelly](https://www.michaelconnelly.com/). Cuando me enteré de que estaban a la venta en Estados Unidos primeras ediciones firmadas de la última novela con Harry Bosch, "Desert Star", no pude evitar el impulso de comprarla. [Correos parece haber perdido mi libro](https://twitter.com/gorkaio/status/1600436911797342208?s=20&t=jxSim7Y6A1NKmsIohZ2mcw), pero es otra historia.
 
 ¿Qué tal si le pedimos a ChatGPT que nos genere un relato corto en el estilo de Michael Connelly?
 
