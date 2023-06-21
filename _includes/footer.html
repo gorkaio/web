@@ -44,7 +44,7 @@
             </ul>
         </nav>
     </div>
-    <div class="bg-gray-800 text-gray-200 text-xs pb-12 pt-2 flex items-center justify-center space-x-2">
+    <div class="bg-gray-800 text-gray-200 text-xs pb-1 pt-2 flex items-center justify-center space-x-2">
         <a class="inline-flex items-center border pl-1 pr-2 py-0.5 hover:border-gray-100 hover:bg-gray-700 rounded border-gray-400" href="/feed.xml">
             <svg role="img" class="inline w-5 h-5 text-orange-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
                 <path d="M493 652H392c0-134-111-244-244-244V307c189 0 345 156 345 345zm71 0c0-228-188-416-416-416V132c285 0 520 235 520 520z"/>
@@ -53,5 +53,8 @@
             Feed
         </a>
         {% include paypal_coffee.html %}
+    </div>
+    <div class="bg-gray-800 text-gray-200 text-xs pb-12 pt-1 flex items-center justify-center space-x-2">
+        {% include cv.html %}
     </div>
 </footer>
