@@ -3,7 +3,7 @@ layout: post
 title: "Las cinco disfunciones de un equipo: ausencia de confianza"
 description: "La ausencia de confianza en un equipo, primera parte de 'Las cinco disfunciones de un equipo' de Patrick Lencioni"
 image: /2023/09/16/portada.png
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags:
  - libros
  - equipo
@@ -51,7 +51,7 @@ Ya, yo tampoco creo en el Horóscopo ni en los cuestionaros de Vale, pero si te 
 
 #### Evaluaciones 360
 
-Cada miembro del equipo proporciona un juicio personal sobre las contribuciones más destacadas y las áreas de mejora de cada uno de sus colegas, con un espíritu de crítica constructiva y desarrollo individual. Estas evaluaciones requiren una profunda y calmada reflexión personal sobre el feedback recibido, y la comprensión de que la percepción que otros tienen de nosotros y nuestras aportaciones no tiene por qué coincidir con la realidad que nosotros sentimos, y en ese caso deberemos analizar por qué se da esa disonancia en lugar de confrontar a la persona que nos la ofrece. No hace falta decir que este ejercicio require de una considerable base de confianza previa, y es más una herramienta para mantener la confianza existe que un modo de instaurarla en un equipo que carece de ella.
+Cada miembro del equipo proporciona un juicio personal sobre las contribuciones más destacadas y las áreas de mejora de cada uno de sus colegas, con un espíritu de crítica constructiva y desarrollo individual. Estas evaluaciones requiren una profunda y calmada reflexión personal sobre el feedback recibido, y la comprensión de que la percepción que otros tienen de nosotros y nuestras aportaciones no tiene por qué coincidir con la realidad que nosotros sentimos, y en ese caso deberemos analizar por qué se da esa disonancia en lugar de confrontar a la persona que nos la ofrece. No hace falta decir que este ejercicio require de una considerable base de confianza previa, y es más una herramienta para mantener la confianza existente que un modo de instaurarla en un equipo que carece de ella.
 
 Es _vital_ desvincular completamente este ejercicio de cualquier evaluación de desempeño o revisión de compensaciones. En el momento en que introducimos estos factores se convierte en una herramienta para las alianzas estratégicas, las venganzas personales y el conflicto.
 
