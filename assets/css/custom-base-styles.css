@@ -31,7 +31,7 @@ article {
             @apply text-left text-base md:text-xl font-sans text-gray-800;
         }
         h4 {
-            @apply text-left text-base md:text-lg font-sans text-gray-600;
+            @apply text-left before:content-['✔'] before:pr-2 text-base md:text-lg font-sans text-orange-500;
         }
         ul, ol {
             @apply text-left text-sm md:text-base indent-4 list-disc list-inside space-y-2 mt-2;
